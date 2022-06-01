@@ -18,7 +18,7 @@ spec:
         app: test-argocd
     spec:
       containers:
-      - image: sabrisomrani/pisquare-argo:1.1
+      - image: sabrisomrani/pisquare-argo:1.2
         name: pisquare-argo
         ports:
         - containerPort: 80
