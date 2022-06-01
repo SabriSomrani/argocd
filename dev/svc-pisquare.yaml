@@ -4,7 +4,6 @@ metadata:
   labels:
     app: test-argocd
   name: test-argocd
-  namespace: default
 spec:
   ipFamilies:
   - IPv4
