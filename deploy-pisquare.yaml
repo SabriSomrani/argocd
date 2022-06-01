@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: test-argocd
+  name: test-argocd
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: test-argocd
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: test-argocd
+    spec:
+      containers:
+      - image: sabrisomrani/pisquare-argo:1.1
+        name: pisquare-argo
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
